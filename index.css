@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: #e5e8ec;
+  background-color: #0f1011;
+}
+.container {
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+.header {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 2.5rem;
+}
+.fa-bars {
+  font-size: 2rem;
+  display: none;
+}
+
+.logo {
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.para {
+  text-align: justify;
+  font-family: "Inter", sans-serif;
+  font-weight: lighter;
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+  margin-bottom: 3rem;
+}
+.content1 {
+  max-width: 40rem;
+}
+.btn {
+  border-radius: 2px;
+  border: none;
+  font-family: Arial;
+  color: #080708;
+  font-size: 14px;
+  background: #faff69;
+  padding: 10px 29px 10px 29px;
+  text-decoration: none;
+}
+.list {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+}
+.list li a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #cdd1d7;
+  text-transform: capitalize;
+}
+.heading {
+  font-family: "Prata", serif;
+  font-size: 3rem;
+
+  margin-top: 4rem;
+  color: #fff;
+  font-weight: normal;
+}
+.logos {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-content: space-between;
+}
+.logos img {
+  width: 100px;
+  height: 50px;
+}
+.img-left,
+.img-right {
+  max-width: 100%;
+}
+
+.description {
+  font-family: "Inter", sans-serif;
+  font-weight: lighter;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  line-height: 1.3rem;
+  color: #aaacaf;
+}
+.title {
+  margin-top: 1.3rem;
+  font-family: "Prata", serif;
+  font-size: 1.7rem;
+  font-weight: normal;
+}
+.content {
+  margin-top: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2.5rem;
+}
+.msg_title {
+  margin-top: 1.3rem;
+  font-family: "Prata", serif;
+  font-size: 1.7rem;
+  font-weight: normal;
+  text-transform: capitalize;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: inherit;
+  align-content: center;
+  column-gap: 3rem;
+}
+.msg_description_1,
+.msg_description {
+  margin-top: 1.7rem;
+  color: #aaacaf;
+  font-family: "Inter", sans-serif;
+  font-weight: lighter;
+  font-size: 0.8rem;
+  text-align: justify;
+}
+.main2 {
+  background-color: #45484a;
+  min-height: 20rem;
+  margin-top: 4rem;
+}
+.title_footer {
+  margin-top: 1.3rem;
+  font-family: "Prata", serif;
+  font-size: 1.2rem;
+  font-weight: normal;
+  text-transform: capitalize;
+}
+.para1 {
+  margin-top: 0.2rem;
+  color: #aaacaf;
+  font-family: "Inter", sans-serif;
+  font-weight: lighter;
+  font-size: 0.8rem;
+  text-align: justify;
+  line-height: 1.2rem;
+}
+.footer {
+  padding: 2rem 0;
+}
+.content2 {
+  max-width: 50%;
+  margin: auto 0;
+}
+.btn-footer {
+  border-radius: 2px;
+  font-family: Arial;
+  color: #080708;
+  font-size: 14px;
+  background: #faff69;
+  padding: 10px 29px 10px 29px;
+  text-decoration: none;
+  border: none;
+  margin-top: 1.3rem;
+}
+.footer2 {
+  background-color: #45484a;
+
+  padding: 1rem 0;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+.social_icons {
+  display: flex;
+  list-style: none;
+  column-gap: 1.2rem;
+}
+.name {
+  font-family: "Prata", serif;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 800px) {
+  .logos {
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+  }
+}
+@media (max-width: 570px) {
+  .heading {
+    font-size: 35px;
+  }
+}
+@media (max-width: 468px) {
+  .content {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 1.5rem;
+  }
+  .content2 {
+    max-width: 100%;
+  }
+  .logos {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+    height: inherit;
+    align-content: center;
+    justify-content: center;
+    column-gap: 3rem;
+    padding: 1.2rem 0;
+  }
+  .heading {
+    font-size: 22px;
+  }
+}
+@media (max-width: 770px) {
+  .navbar,
+  .btn {
+    display: none;
+  }
+  .fa-bars {
+    display: block;
+  }
+} ;
